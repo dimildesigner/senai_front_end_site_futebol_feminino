@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* zerando a página, ou documento. */
+* {  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    background: black;
+    width: 1920px;
+    height: auto;
+}
+
+main {
+    margin: 0 0 -50px 0;
+}
+
+h2, h3, h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    color: white;
+    font-size:50px;
+    text-shadow: 2px 2px 5px #000000; 
+}
+
+h3 {
+    font-size:30px;
+}
+
+p {
+    line-height: 25px;
+}
+
+
+/* Sessão 0 - Menu */
+header {
+    height: 656px;
+    position: relative;
+    text-align: center;
+    background:#228fd0;
+}
+
+header::before { /* Pseudo elemento - acrescenta um elemento antes ou depois */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(img/gremio_banner-desktop-top.jpg) no-repeat center;
+    background-size: cover; 
+    opacity: 0.5;
+}
+
+.redes {
+    height: 54px;
+    position:relative;
+    background-color: #1a1a1a;     
+}
+
+.mosquetas img {
+    height: 120px;
+    position: absolute;
+    top: -40px;
+    left: 180px;
+    text-shadow: 5px 5px 8px black;
+    display: inline-block;
+}
+
+.gremio img {
+    height: 120px;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    text-shadow: 5px 5px 8px black;
+    display: inline-block;
+}
+    
+.menu {
+    height: 48px;
+    background: #228fd0;
+    list-style:none;
+    position:relative;
+    left: 0;
+    padding-right: 50px;
+    text-align: right;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.menu li {
+    position:relative;
+    display: inline-block;
+    margin: 3px 3px 0 3px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color:black; 
+    text-decoration:none; 
+    padding:10px 20px; 
+    display:block;
+}
+
+.menu li a:hover {
+    background:black;
+    color:#fff;
+}
+
+
+/* Sessão 1 - Topo */
+.banner_topo {
+    color: white;    
+    font-size: 110px;
+    text-align: center;
+    /* letter-spacing: 20px; */
+    padding: 150px 0; 
+    position: relative;
+    text-shadow: 2px 2px 5px #000000;  
+}
+
+.banner_topo h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Sessão 2 - Torcida */
+.torcida {
+    height: 640px;
+    display: inline-block;
+    background-color: #76bfea;
+    margin: 0 15px 0 15px;
+    padding: 30px;  
+}
+
+.torcida img {
+    width: 500px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    border: 5px solid white;
+    box-shadow: 2px 2px 5px #000000;  
+    top: 150px;
+    left: 0;
+}
+
+.titulo {
+    margin: -220px 0 0 0;
+}
+
+.sobre {     
+    margin: -400px 0 0 550px;
+}
+
+.legenda {
+    margin: 350px 0 0 0;
+}
+
+
+/* Sessão 3 - Membro */
+.membro {
+    width: 100%;
+    background: #1a1a1a;
+    padding-top: 15px;
+}
+
+.membro img {
+    position: relative;
+    right: -185px;
+}
+
+.botao_membro {
+    border: 0;
+    background: none;
+    display:inline-block;
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+}
+
+.botao_membro a {
+    padding: 15px 60px 15px 60px;
+    background: #228fd0;    
+    color:#fff;
+    text-decoration:none;    
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;       
+}
+
+.botao_membro a:hover {
+    background:#76bfea;
+    color: black; 
+}
+
+
+/* Sessão 1 - Loja */
+.loja {
+    height: 1005px;
+    margin: 0 15px 0 15px;
+    background: #557ea0;       
+}
+
+.loja h2 {
+    text-align: left;
+    position: relative;
+    top: 70px;
+    left: 60px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;      
+}
+
+.card {
+    width: 400px;
+    height: 650px;
+    text-align: center;
+    background: #76bfea;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 5px #000000; 
+    padding: 10px;    
+    position: relative;
+    top: 140px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 13px;
+}
+
+button {
+    background-color: #228fd0;  
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Sessão 2 - Banner Compra de ingresso */
+.banner-ingresso {
+    width: 1920px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a; 
+    padding: 20px;
+    color: white;
+}
+
+.botao_membro a {
+    padding: 15px 60px 15px 60px;
+    background: #228fd0;    
+    color:#fff;
+    text-decoration:none;    
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;       
+}
+
+.banner-ingresso > botao_ingresso a:hover {
+    background:#76bfea;
+    color: black; 
+}
+
+.disputa {
+    display:inline-block;
+    margin: auto;
+    /* align-items: center; */
+}
+
+.disputa img {
+    width: 90px;
+    height: 90px;
+    margin: 0 30px;
+}
+
+.disputa span {
+    font-size: 40px;
+    margin: auto;
+}
+
+/* Sessão 3 - Galeria de fotos */
+.galeria {
+    height: autopx;
+    margin: 0 15px 0 15px;
+    text-align: center;
+    background: #245787;   
+}
+
+.galeria h2 {
+    text-align: left;
+    padding: 70px 0 50px 60px;
+    color: white;      
+}
+
+.foto-card {
+    width: 427px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.foto-card img {
+    width: 100%;
+    filter: grayscale(90%);
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 5px #000000;  
+}
+
+.foto-card:hover img {
+    filter: none;
+}
+
+.cards h3 {
+    color: white; 
+    margin: 30px 0 10px 0;
+}
+
+
+/* Sessão 4 - Banner Parceiros */
+.banner-parceiros {
+    width: 1920px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; 
+}
+
+.logos img {
+    height: 50px;
+    width: auto;
+    margin: 30px;
+}
+
+
+/* Sessão 5 - Footer */
+.footer {
+    width: 1920px;
+    height: 725px;
+    background-color: #228fd0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer img {
+    width: auto;
+    height: 220px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer li a {
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    padding:10px 20px; 
+    display:block;
+}
+
+.footer li a:hover {
+    background:black;
+    color:#fff;
+}
+
+.redes-sociais img {
+    width: 26px;
+    height: 26px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 50%;    
+    box-shadow: 2px 2px 5px #000000; 
+}
+
+
+/* Sessão 6 - Direitos Reservados */
+.footer-final {
+    width: 1920px;
+    height: 150px;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.footer-final span {
+    color: #228fd0;
+    font-size: 18px;
+}
+
+.footer-final img {
+    height: 30px;
+    width: auto;
+    margin: 10px;
+}
